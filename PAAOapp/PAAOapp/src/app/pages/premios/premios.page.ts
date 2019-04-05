@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ModalController } from '@ionic/angular';
-import { ImageViewerComponent } from '../image-viewer/image-viewer.component';
+import { PopoverLauncherComponent } from '../popover-launcher/popover-launcher.component';
 import { PopoverController} from '@ionic/angular';
 
 @Component({
@@ -20,7 +19,7 @@ export class PremiosPage implements OnInit {
  async mostrarPop(){
 
    const popover = await this.popoverCtrl.create({
-     component: ImageViewerComponent,
+     component: PopoverLauncherComponent,
      componentProps:{
        prueba1: 'value'
      }

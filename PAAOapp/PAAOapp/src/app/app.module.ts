@@ -9,10 +9,11 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ImageViewerComponent } from './pages/image-viewer/image-viewer.component';
+import { PopoverLauncherComponent } from './pages/popover-launcher/popover-launcher.component';
 
 @NgModule({
-  declarations: [AppComponent, ImageViewerComponent],
-  entryComponents: [ImageViewerComponent],
+  declarations: [AppComponent, ImageViewerComponent, PopoverLauncherComponent],
+  entryComponents: [ImageViewerComponent, PopoverLauncherComponent],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule,],
   providers: [
     StatusBar,
