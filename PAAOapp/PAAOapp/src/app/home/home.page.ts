@@ -5,7 +5,7 @@ import { Component, ViewChild } from '@angular/core';
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
 })
-export class HomePage {
+export class HomePage { /*
  @ViewChild('slideWithNav') slideWithNav: Slides;
  @ViewChild('slideWithNav2') slideWithNav2: Slides;
  @ViewChild('slideWithNav3') slideWithNav3: Slides;
@@ -51,7 +51,7 @@ constructor(
           id: 3,
           image: '../../assets/banners/.jpg'
         }*/
-      ]
+    /*  ]
     };
   }
 
@@ -90,5 +90,5 @@ checkisEnd(object, slideView) {
     object.isEndSlide = istrue;
   });
 }
-
+*/
 }
