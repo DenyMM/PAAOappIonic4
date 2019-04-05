@@ -1,0 +1,110 @@
+
+
+#Prem{
+  font-family: 'Roboto Condensed', Bold;
+  font-size-adjust:auto;
+  font-size: 20px;
+  text-align: left;
+}
+
+#iconT{
+  max-width: 50%;
+  text-align:center;
+  filter:opacity(60%);
+}
+
+h1 {
+  font-family: 'Roboto Condensed',  Bold;
+  font-size-adjust: auto;
+  font-size: 20px;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Roboto Condensed', Bold;
+  font-size-adjust: auto;
+  font-size: 16px;
+  text-align: center;
+}
+
+h3, p{
+ font-family: 'Roboto Condensed', Bold;
+ font-size-adjust: auto;
+ text-align: left;
+}
+
+h4 {
+  font-family: 'Roboto Condensed', Bold;
+  font-size-adjust: auto;
+  font-size: 15px;
+  text-align: center;
+}
+
+h5 {
+  font-family: 'Roboto Condensed', Bold;
+  font-size-adjust: auto;
+  font-size: 13px;
+  text-align: center;
+}
+
+h3{
+ font-size: 12px;
+}
+
+p{
+ font-size: 11px;
+}
+
+
+ion-col{
+   border: solid 1px grey;
+}
+
+.colBoard{
+  border: none;
+}
+
+ion-col{
+  text-align: justify;
+   align-content: flex-start;
+}
+
+.invisible{
+  background-color: #ffffff;
+  border: none;
+}
+
+.topColor{
+  background-color: rgba(#67a4af, 0.89);
+  border-color: rgba(#67a4af, 0.89);
+}
+
+.blockColor{
+ background-color: rgba(#aa66ad, 0.89);
+ border-color: rgba(#aa66ad, 0.89);
+}
+
+.dateColor{
+  background-color: rgba(#0e7b9e, 0.92);
+  border-color: rgba(#0e7b9e, 1);
+}
+
+.pbFloor{
+ background-color: rgba(#339646, 0.91);
+ border-color: rgba(#339646, 0.91);
+}
+
+.firstFloor{
+ background-color: rgba(#d4cc1a, 0.86);
+ border-color: rgba(#d4cc1a, 0.86);
+}
+
+.secondFloor{
+ background-color: rgba(#d29a1d, 0.9);
+ border-color: rgba(#d29a1d, 0.9);
+}
+
+.thirdFloor{
+ background-color: rgba(#b8102e, 0.86);
+ border-color: rgba(#b8102e, 0.86);
+}

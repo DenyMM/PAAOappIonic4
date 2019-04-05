@@ -1,0 +1,69 @@
+
+
+ion-content {
+    --background: #000000 url('../../../assets/splash/splash_smo.png')  0 0/100% 100% no-repeat;
+}
+
+#cart{
+  font-family: 'Roboto Condensed', Bold;
+  font-size-adjust:auto;
+  font-size: 20px;
+  text-align: left;
+}
+
+h1 {
+  font-family: 'Roboto Condensed',  Bold;
+  font-size-adjust: auto;
+  font-size: 20px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+h2 {
+  font-family: 'Roboto Condensed', Bold;
+  font-size-adjust: auto;
+  font-size: 18px;
+  text-align: left;
+}
+
+h3{
+ font-family: 'Roboto Condensed', Bold;
+ font-size-adjust: auto;
+ font-size: 13px;
+ text-align: left;
+}
+
+
+h4 {
+  font-family: 'Roboto Condensed', Bold;
+  font-size-adjust: auto;
+  font-size: 12px;
+  text-align: left;
+}
+
+h5 {
+  font-family: 'Roboto Condensed', Bold;
+  font-size-adjust: auto;
+  font-size: 11px;
+  text-align: left;
+}
+
+
+p{
+  font-family: 'Roboto Condensed', Bold;
+  font-size-adjust: auto;
+  font-size: 10px;
+  text-align: left;
+}
+
+ion-card{
+  background: rgba(154, 149, 224, 0.28);
+  background-blend-mode: luminosity;
+  opacity: 0.9;
+  color: #ffffff;
+
+}
+
+ion-list{
+  background-color: transparent;
+}

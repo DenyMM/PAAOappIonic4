@@ -1,0 +1,634 @@
+<ion-header>
+  <ion-toolbar color="secondary">
+    <ion-title id="Prem">Programa Atlagans</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen="true" scroll-x="true" scroll-y="true">
+  <div class="ion-padding">
+    <ion-grid fixed="true">
+      <ion-row>
+        <ion-col size="50" class="colBoard">
+          <ion-grid>
+            <ion-row>
+              <ion-col size="1" class="invisible">
+              </ion-col>
+              <ion-col size="1" class="invisible">
+              </ion-col>
+              <ion-col size="9" class="topColor">
+              <h5>  Sabado / Saturday: 25 May 2019</h5>
+              </ion-col>
+            </ion-row>
+
+            <ion-row class="dateColor">
+              <ion-col size="1" class="invisible">
+              </ion-col>
+              <ion-col size="1" class="blockColor">
+              <p>  RoomName</p>
+              </ion-col>
+              <ion-col size="1">
+              <p>  8:30-9:15</p>
+              </ion-col>
+              <ion-col size="1">
+              <p>  9:15-10:00</p>
+              </ion-col>
+              <ion-col size="1">
+              <p>  10:30-11:15</p>
+              </ion-col>
+              <ion-col size="1">
+              <p>  11:15-12:00</p>
+              </ion-col>
+              <ion-col size="1">
+              <p>  12:00-14:00</p>
+              </ion-col>
+              <ion-col size="1">
+                <p>14:00-14:45</p>
+              </ion-col>
+              <ion-col size="1">
+              <p>  14:45-15:30</p>
+              </ion-col>
+              <ion-col size="1">
+              <p>  16:00-16:45</p>
+              </ion-col>
+              <ion-col size="1">
+              <p>  16:45-17:30</p>
+              </ion-col>
+              <ion-col size="1" class="invisible">
+              <p> </p>
+              </ion-col>
+            </ion-row>
+
+            <ion-row>
+              <ion-col size="1" class="pbFloor"><p>Planta baja <br> ground floor</p>
+              </ion-col>
+              <ion-col size="1"  class="pbFloor">
+                <p>Auditorio <br> (ENG/SPA)</p>
+              </ion-col>
+              <ion-col size="2" (click)="mostrarPop()">
+                <p>CO-S04 <br> PanKpro: A focus on main complications management</p>
+              </ion-col>
+              <ion-col size="1" (click)="mostrarPop1()">
+              <p>  ON-C01 <br> Forget-me-nots in retinoblastoma</p>
+              </ion-col>
+              <ion-col size="1">
+                <p>AJO Lecture: ZERO deaths from rare cancer in babies’ eye(s): a global pilot project</p>
+              </ion-col>
+              <ion-col size="1">
+                <p></p>
+              </ion-col>
+              <ion-col size="2">
+                <p>ES-S02 <br> America in Strabismus. Rapid fire cases. I did it my way</p>
+              </ion-col>
+              <ion-col size="2">
+                <p>VA-S18 <br> Ophthalmic genetics today</p>
+              </ion-col>
+            </ion-row>
+
+            <ion-row>
+              <ion-col size="1" class="firstFloor">
+              </ion-col>
+              <ion-col size="1" class="firstFloor">
+                <p>Bacalar</p>
+              </ion-col>
+              <ion-col size="2">
+                <p>VA-S08 <br> Tecnología y educación</p>
+              </ion-col>
+              <ion-col size="2">
+                <p>VA-S09 <br> Competencias para educadores</p>
+              </ion-col>
+              <ion-col size="1">
+                <p></p>
+              </ion-col>
+              <ion-col size="2">
+                <p>VA-S10 <br> Simposio latinoamericano de editores de revistas oftalmológicas: Parte I</p>
+              </ion-col>
+              <ion-col size="2">
+                <p>VA-S11 <br> Simposio latinoamericano de editores de revistas oftalmológicas: Parte II</p>
+              </ion-col>
+            </ion-row>
+
+            <ion-row>
+              <ion-col size="1" class="firstFloor">
+              </ion-col>
+              <ion-col size="1" class="firstFloor">
+                <p>Costa Maya 1</p>
+              </ion-col>
+              <ion-col size="2">
+                <p>Sesion Trabajos Libres</p>
+              </ion-col>
+              <ion-col size="2">
+                <p>Sesion Trabajos Libres</p>
+              </ion-col>
+              <ion-col size="1">
+                <p></p>
+              </ion-col>
+              <ion-col size="2">
+                <p>Sesion Trabajos Libres</p>
+              </ion-col>
+              <ion-col size="2">
+                <p>Sesion Trabajos Libres</p>
+              </ion-col>
+            </ion-row>
+
+            <ion-row>
+              <ion-col size="1" class="firstFloor">
+                <p>primer piso <br> 1st floor</p>
+              </ion-col>
+              <ion-col size="1" class="firstFloor">
+                <p>Costa Maya 2</p>
+              </ion-col>
+              <ion-col size="2">
+                <p>Sesion Trabajos Libres</p>
+              </ion-col>
+              <ion-col size="2">
+                <p>Sesion Trabajos Libres</p>
+              </ion-col>
+              <ion-col size="1">
+                <p></p>
+              </ion-col>
+              <ion-col size="2">
+                <p>Sesion Trabajos Libres</p>
+              </ion-col>
+              <ion-col size="2">
+                <p>Sesion Trabajos Libres</p>
+              </ion-col>
+            </ion-row>
+
+            <ion-row>
+              <ion-col size="1" class="firstFloor">
+              </ion-col>
+              <ion-col size="1" class="firstFloor">
+                <p>Costa Maya 3/4</p>
+              </ion-col>
+              <ion-col size="2">
+                <p>CR-S02 <br> Manejo de complicaciones en cirugía refractiva</p>
+              </ion-col>
+              <ion-col size="2">
+                <p>CR-S03 <br> Cirugía refractiva en queratocono</p>
+              </ion-col>
+              <ion-col size="1">
+                <p></p>
+              </ion-col>
+              <ion-col size="2">
+                <p>CR-S04 <br> Lentes faquicas: últimos avances</p>
+              </ion-col>
+              <ion-col size="2">
+                <p>MU-S07 <br> Video complicaciones: Los casos más retadores del 2018</p>
+              </ion-col>
+            </ion-row>
+
+            <ion-row>
+              <ion-col size="1" class="firstFloor">
+              </ion-col>
+              <ion-col size="1" class="firstFloor">
+                <p>Costa Maya 5</p>
+              </ion-col>
+              <ion-col size="2">
+                <p>RP-S01 <br> Programas de ROP en Latinoamérica</p>
+              </ion-col>
+              <ion-col size="2">
+                <p>RP-S02 <br> Tratamiento para ROP</p>
+              </ion-col>
+              <ion-col size="1">
+                <p></p>
+              </ion-col>
+              <ion-col size="2">
+                <p>RP-S03 <br> Actualidades en imagenología en ROP</p>
+              </ion-col>
+              <ion-col size="2">
+                <p>RP-S04 <br> Actualidades en ROP</p>
+              </ion-col>
+            </ion-row>
+
+            <ion-row>
+              <ion-col size="1" class="secondFloor">
+              </ion-col>
+              <ion-col size="1" class="secondFloor">
+                <p>Cozumel 1</p>
+              </ion-col>
+              <ion-col size="1">
+                <p>OC-C11 <br> Manejo de las ptosis congénitas</p>
+              </ion-col>
+              <ion-col size="1">
+                <p>OC-C10 <br> Manejo de ptosis con mala función: ¡Ábrete sésamo!</p>
+              </ion-col>
+              <ion-col size="2">
+                <p>OC-S05 <br> Oculoplástica actual: aportaciones que han cambiado el panorama</p>
+              </ion-col>
+              <ion-col size="1">
+                <p></p>
+              </ion-col>
+              <ion-col size="2">
+                <p>OC-S04 <br> Cosmética periocular III. Tú técnica vs la mía</p>
+              </ion-col>
+              <ion-col size="1">
+                <p>OC-C02 <br> Innovaciones en oculoplástica</p>
+              </ion-col>
+              <ion-col size="1">
+                <p>OC-C04 <br> Cosmética de mínima invasión</p>
+              </ion-col>
+            </ion-row>
+
+            <ion-row>
+              <ion-col size="1" class="secondFloor">
+              </ion-col>
+              <ion-col size="1" class="secondFloor">
+                <p>Cozumel 2</p>
+              </ion-col>
+              <ion-col size="2">
+                <p>PC-S01 <br> Actualización y controversias en cirugía de catarata	</p>
+              </ion-col>
+              <ion-col size="2">
+                <p>PC-S02 <br> Avances en glaucoma para el oftalmólogo general</p>
+              </ion-col>
+              <ion-col size="1">
+                <p></p>
+              </ion-col>
+              <ion-col size="2">
+                <p>PC-S03 <br> Desafío actual en Latinoamérica: Manejo de la diabetes</p>
+              </ion-col>
+              <ion-col size="2">
+                <p>PC-S04 <br> Avances en la tecnología para “mejorar la visión”</p>
+              </ion-col>
+            </ion-row>
+
+            <ion-row>
+              <ion-col size="1" class="secondFloor">
+              </ion-col>
+              <ion-col size="1" class="secondFloor">
+                <p>Cozumel 3/4</p>
+              </ion-col>
+              <ion-col size="2">
+                <p>CO-S01 <br> Modalidades avanzadas de trasplante corneal en 2019</p>
+              </ion-col>
+              <ion-col size="2">
+                <p>CO-S02 <br> Nuevas tendencias en superficie ocular</p>
+              </ion-col>
+              <ion-col size="1">
+                <p></p>
+              </ion-col>
+              <ion-col size="2">
+                <p>CO-S05 <br> Cirugía lamelar avanzada en ectasias y disfunción endotelial	</p>
+              </ion-col>
+              <ion-col size="1">
+                <p>CO-C08 <br> Lo que el oftalmólogo general debe saber de los trasplantes</p>
+              </ion-col>
+              <ion-col size="1">
+                <p>CO-C07 <br> Qué hay nuevo en trasplantes</p>
+              </ion-col>
+            </ion-row>
+
+            <ion-row>
+              <ion-col size="1" class="secondFloor">
+              </ion-col>
+              <ion-col size="1" class="secondFloor">
+                <p>Cozumel 5</p>
+              </ion-col>
+              <ion-col size="2">
+                <p>ES-S05 <br> Estrabismos agudos, perlas para llegar a un buen diagnóstico</p>
+              </ion-col>
+              <ion-col size="2">
+                <p>ES-S06 <br> Más allá del estrabismo. Estrabismos asociados a otras enfermedades</p>
+              </ion-col>
+              <ion-col size="1">
+                <p></p>
+              </ion-col>
+              <ion-col size="2">
+                <p>RE-S06 <br> Manejo del redesprendimiento de retina</p>
+              </ion-col>
+              <ion-col size="2">
+                <p>ES-S07 <br> Estrabismo extremo</p>
+              </ion-col>
+            </ion-row>
+
+            <ion-row>
+              <ion-col size="1" class="secondFloor">
+                <p>segundo piso <br> 2st floor</p>
+              </ion-col>
+              <ion-col size="1" class="secondFloor">
+                <p>Xcaret</p>
+              </ion-col>
+              <ion-col size="2">
+                <p>OP-S01 <br> Actualización en patología pediátrica</p>
+              </ion-col>
+              <ion-col size="2">
+                <p>OP-S02 <br> Diagnóstico diferencial del niño con fotofobia</p>
+              </ion-col>
+              <ion-col size="1">
+                <p></p>
+              </ion-col>
+              <ion-col size="1">
+                <p>CA-C28 <br> Aberrometría intraoperatoria (ORA) ¿se hará indispensable?</p>
+              </ion-col>
+              <ion-col size="1">
+                <p>CA-C32 <br> Poder del LIO determinado por aberrometría transoperatoria (ORA) en casos con queratotomía radiada previa</p>
+              </ion-col>
+              <ion-col size="1">
+                <p>CA-C14 <br> Glaucoma y catarata</p>
+              </ion-col>
+              <ion-col size="1">
+                <p>CA-C24 <br> Mácula y catarata</p>
+              </ion-col>
+            </ion-row>
+
+            <ion-row>
+              <ion-col size="1" class="secondFloor">
+              </ion-col>
+              <ion-col size="1" class="secondFloor">
+                <p>Tulum <br> (ENG/SPA)</p>
+              </ion-col>
+              <ion-col size="2">
+                <p>CO-S03 <br> State of the art in cornea and ophthalmology</p>
+              </ion-col>
+              <ion-col size="2">
+                <p>VA-S15 <br> Maximizing productivity and quality through eye care team development</p>
+              </ion-col>
+              <ion-col size="1">
+                <p></p>
+              </ion-col>
+              <ion-col size="2">
+                <p>RE-S22 <br> Diabetic Retinopathy: Basic Science to Clinical Applications</p>
+              </ion-col>
+              <ion-col size="2">
+                <p>VA-S16 <br> Expanding human resources to prevent blindness</p>
+              </ion-col>
+            </ion-row>
+
+            <ion-row>
+              <ion-col size="1" class="secondFloor">
+              </ion-col>
+              <ion-col size="1" class="secondFloor">
+                <p>Isla Mujeres</p>
+              </ion-col>
+              <ion-col size="2">
+                <p>MU-S05 <br> La prevención en salud visual, porque todos tenemos que ver</p>
+              </ion-col>
+              <ion-col size="1">
+                <p>GL-C03 <br> Claves en el diagnóstico de lo que NO es glaucoma</p>
+              </ion-col>
+              <ion-col size="1">
+                <p>GL-C04 <br> Glaucoma terminal</p>
+              </ion-col>
+              <ion-col size="1">
+                <p></p>
+              </ion-col>
+              <ion-col size="1">
+                <p>GL-C06 <br> Glaucoma por cierre angular: diagnóstico gonioscopico y por ultrabiomicroscopía. Beneficios de la cirugía de cararata</p>
+              </ion-col>
+              <ion-col size="1">
+                <p>GL-C07 <br> Rol de las sociedades científicas en la educación y manejo de glaucoma en Bolivia</p>
+              </ion-col>
+              <ion-col size="1">
+                <p>IN-C05 <br> Pros y contras en el manejo médico y quirúrgico de uveítis</p>
+              </ion-col>
+              <ion-col size="1">
+                <p>IN-C11 <br> Guías mexicanas para manejo de uveítis no infecciosa</p>
+              </ion-col>
+            </ion-row>
+
+            <ion-row>
+              <ion-col size="1" class="secondFloor">
+              </ion-col>
+              <ion-col size="1" class="secondFloor">
+                <p>Cobá <br> (ENG/SPA)</p>
+              </ion-col>
+              <ion-col size="2">
+                <p>NE-S02 <br> Neuro-ophthalmic emergencies. Making the right diagnosis</p>
+              </ion-col>
+              <ion-col size="2">
+                <p>GL-S05 <br> Status quo and new trends in glaucoma care</p>
+              </ion-col>
+              <ion-col size="1">
+                <p></p>
+              </ion-col>
+              <ion-col size="2">
+                <p>ON-S01 <br> Dateline NBC mystery oncology cases</p>
+              </ion-col>
+              <ion-col size="2">
+                <p>ON-S02 <br> Hot topics in ocular oncology 2019</p>
+              </ion-col>
+            </ion-row>
+
+            <ion-row>
+              <ion-col size="1" class="thirdFloor">
+              </ion-col>
+              <ion-col size="1" class="thirdFloor">
+                <p>Gran Cancun 1</p>
+              </ion-col>
+              <ion-col size="2">
+                <p>RE-S05 <br> Apuntes prácticos para diagnóstico por imagen en retina</p>
+              </ion-col>
+              <ion-col size="2">
+                <p>CA-S01 <br> Cirugía de catarata, perfeccionando el resultando refractivo</p>
+              </ion-col>
+              <ion-col size="1">
+                <p></p>
+              </ion-col>
+              <ion-col size="2">
+                <p>RE-S13 <br> Desprendimiento de retina regmatógeno y vitreorretinopatía proliferativa</p>
+              </ion-col>
+              <ion-col size="2">
+                <p></p>
+              </ion-col>
+            </ion-row>
+
+            <ion-row>
+              <ion-col size="1" class="thirdFloor">
+              </ion-col>
+              <ion-col size="1" class="thirdFloor">
+                <p>Gran Cancun 2</p>
+              </ion-col>
+              <ion-col size="2">
+                <p>IN-S06 <br> Manejo quirúrgico de las uveítis. Un constante desafío</p>
+              </ion-col>
+              <ion-col size="2">
+                <p>IN-S03 <br> Manifestaciones oftalmológicas de vasculitis primarias, secundarias y otras</p>
+              </ion-col>
+              <ion-col size="1">
+                <p></p>
+              </ion-col>
+              <ion-col size="2">
+                <p>IN-S04 <br> Vogt Koyanagi Harada</p>
+              </ion-col>
+              <ion-col size="2">
+                <p>IN-S05 <br> Epidemiología. Nuevas terapias. Infecciones oportunistas en la era de la terapia biológica</p>
+              </ion-col>
+            </ion-row>
+
+            <ion-row>
+              <ion-col size="1" class="thirdFloor">
+                <p>tercer piso <br> 3st floor</p>
+              </ion-col>
+              <ion-col size="1" class="thirdFloor">
+                <p>Gran Cancun 3 <br> (ENG/SPA)</p>
+              </ion-col>
+              <ion-col size="1">
+                <p>CR-C02 <br> Presbicia</p>
+              </ion-col>
+              <ion-col size="1">
+                <p>CR-C03 <br> Desafíos y toma de decisiones en el manejo de la presbicia</p>
+              </ion-col>
+              <ion-col size="2">
+                <p>VA-S19 <br> Simposio de ErgoOftalmología</p>
+              </ion-col>
+              <ion-col size="1">
+                <p></p>
+              </ion-col>
+              <ion-col size="1">
+                <p>NE-C02 <br> Curso básico de neurooftalmologìa 1</p>
+              </ion-col>
+              <ion-col size="1">
+                <p>NE-C03 <br> Curso básico de neurooftalmologìa 2</p>
+              </ion-col>
+              <ion-col size="2">
+                <p>MU-S10 <br> Ocular involvement in tropical viral diseases: Zika virus, Dengue, Yellow fever and Ebola</p>
+              </ion-col>
+            </ion-row>
+
+            <ion-row>
+              <ion-col size="1" class="thirdFloor">
+              </ion-col>
+              <ion-col size="1" class="thirdFloor">
+                <p>Gran Cancun 4</p>
+              </ion-col>
+              <ion-col size="2">
+                <p>GL-S01 <br> Lo más reciente en cirugía de glaucoma</p>
+              </ion-col>
+              <ion-col size="2">
+                <p>RE-S21 <br> Mesa Redonda: Manejo del edema macular diabético</p>
+              </ion-col>
+              <ion-col size="1">
+                <p></p>
+              </ion-col>
+              <ion-col size="2">
+                <p>CA-S04 <br> Tratamiento multidisciplinario de las complicaciones post operatorias de la facoemulsificación</p>
+              </ion-col>
+              <ion-col size="2">
+                <p>CA-S06 <br> Discusión de casos clínicos</p>
+              </ion-col>
+            </ion-row>
+
+            <ion-row>
+              <ion-col size="1" class="thirdFloor">
+              </ion-col>
+              <ion-col size="1" class="thirdFloor">
+                <p>Gran Cancun 5</p>
+              </ion-col>
+              <ion-col size="1">
+                <p></p>
+              </ion-col>
+              <ion-col size="1">
+                <p></p>
+              </ion-col>
+              <ion-col size="1">
+                <p></p>
+              </ion-col>
+              <ion-col size="1">
+                <p></p>
+              </ion-col>
+              <ion-col size="1">
+                <p></p>
+              </ion-col>
+              <ion-col size="1">
+                <p></p>
+              </ion-col>
+              <ion-col size="1">
+                <p></p>
+              </ion-col>
+              <ion-col size="1">
+                <p></p>
+              </ion-col>
+              <ion-col size="1">
+                <p></p>
+              </ion-col>
+            </ion-row>
+
+          </ion-grid>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>
+
+
+  <!--ion-segment scrollable>
+          <ion-segment-button >
+            <p></p></ion-segment-button>
+          <ion-segment-button >
+            <ion-segment-button >
+                <p>RoomName</p></ion-segment-button>
+            <ion-segment-button >
+                <p>Bacalar</p></ion-segment-button>
+
+          </ion-segment-button>
+          <ion-segment-button>
+            <ion-segment-button >
+              <p>8:30-9:15 | 9:15-10:00</p>
+              <p>CO-S04 <br>
+              PanKpro: A focus on main complications management</p></ion-segment-button>
+                <p>ON-C01 Forget-me-nots in retinoblastoma</p>
+
+          </ion-segment-button>
+
+          <ion-segment-button>
+            <p></p></ion-segment-button>
+
+          <ion-segment-button>
+            <ion-segment-button>
+              <p>10:30-11:15</p></ion-segment-button>
+            <ion-segment-button>
+              <p>VA-S09
+              Competencias para educadores</p>  <p>ON-C01 Forget-me-nots in retinoblastoma</p></ion-segment-button>
+            <ion-segment-button>   <p>ON-C01 Forget-me-nots in retinoblastoma</p>
+              </ion-segment-button>
+          </ion-segment-button>
+
+          <ion-segment-button>
+            <p>11:15-12:00</p></ion-segment-button>
+          <ion-segment-button>
+            <p>12:00-14:00</p></ion-segment-button>
+          <ion-segment-button>
+            <p>14:00-14:45</p></ion-segment-button>
+          <ion-segment-button>
+            <p>14:45-15:30</p></ion-segment-button>
+          <ion-segment-button>
+            <p>16:00-16:45</p></ion-segment-button>
+          <ion-segment-button>
+            <p>16:45-17:30</p></ion-segment-button>
+    </ion-segment>
+
+
+<ion-segment scrollable>
+        <ion-segment-button (click)="mostrarPop()">
+          <p>Auditorio<br>(ENG/SPA)</p></ion-segment-button>
+        <ion-segment-button (click)="mostrarPop()">
+          <p>CO-S04 <br> PanKpro: A focus <br> on main complications <br>management</p></ion-segment-button>
+        <ion-segment-button>
+          <p>ON-C01 <br>Forget-me-nots<br>in retinoblastoma</p></ion-segment-button>
+        <ion-segment-button (click)="mostrarPop()">
+          <p>AJO Lecture: ZERO deaths <br> from rare cancer in babies’ <br> eye(s): a global pilot project</p></ion-segment-button>
+        <ion-segment-button (click)="mostrarPop()">
+          <p>ES-S02 <br>America in Strabismus. Rapid <br> fire cases. I did it my way</p></ion-segment-button>
+        <ion-segment-button>
+          <p></p></ion-segment-button>
+        <ion-segment-button>
+          <p>VA-S18 <br> Ophthalmic genetics today</p></ion-segment-button>
+  </ion-segment-->
+
+
+
+
+<!--imagen en modal-->
+  <!--ion-grid>
+    <ion-row>
+      <ion-col size="1">
+      </ion-col>
+      <ion-col size="10">
+        <p>Doble click para zoom</p>
+          <ion-img [src]="imgSource" (click)="viewImage(imgSource)"></ion-img>
+      </ion-col>
+      <ion-col size="1">
+      </ion-col>
+    </ion-row>
+  </ion-grid-->
+<link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed" rel="stylesheet">

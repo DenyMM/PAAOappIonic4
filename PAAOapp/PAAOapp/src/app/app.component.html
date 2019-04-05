@@ -1,0 +1,78 @@
+<ion-app>
+  <ion-menu side="start" menuId="first" contentId="principal"  color="secondary">
+  <ion-header>
+    <ion-toolbar color="primary">
+      <ion-title>Mi perfil</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <ion-grid>
+        <ion-row>
+          <ion-col size="4">
+          </ion-col>
+          <ion-col size="4">
+           <ion-avatar size="1000" style="height: 90px; width: 90px;">
+           <img src="http://visionglobaljuarez.org/wp-content/uploads/2018/06/DOCTOR.jpg">
+           </ion-avatar>
+          </ion-col>
+          <ion-col size="4">
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+      <ion-grid>
+        <ion-row>
+          <ion-col size="1">
+          </ion-col>
+          <ion-col size="10">
+           <ion-item style="text-align: center; align-content: center; font-family: 'Roboto Condensed', sans-serif;"> Dr. Juan Hernandez</ion-item>
+          </ion-col>
+          <ion-col size="1">
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+      <ion-item style="text-align: center; font-family: 'Roboto Condensed', sans-serif;"><ion-icon name="at"></ion-icon>micorreo@email.com</ion-item>
+      <ion-item style="text-align: center; font-family: 'Roboto Condensed', sans-serif;"><ion-icon name="globe"></ion-icon>México</ion-item>
+      <ion-item style="text-align: center; font-family: 'Roboto Condensed', sans-serif;"><ion-icon name="add"></ion-icon>Hospital</ion-item>
+      <ion-item style="text-align: center; font-family: 'Roboto Condensed', sans-serif;"><ion-icon name="school"></ion-icon>Especialidad</ion-item>
+      <ion-item style="text-align: center; font-family: 'Roboto Condensed', sans-serif;"><ion-icon name="mail"></ion-icon>Mensajes</ion-item>
+
+
+      <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+      <ion-fab-button>
+        <ion-icon name="share"></ion-icon>
+      </ion-fab-button>
+  <ion-fab-list side="top">
+    <ion-fab-button><ion-icon name="logo-facebook"></ion-icon></ion-fab-button>
+    <ion-fab-button><ion-icon name="logo-twitter"></ion-icon></ion-fab-button>
+    <ion-fab-button>PAAO</ion-fab-button>
+  </ion-fab-list>
+  </ion-fab>
+
+    </ion-list>
+  </ion-content>
+</ion-menu>
+  <ion-router-outlet id="principal">
+    <ion-tabs>
+      <ion-tab-bar slot="bottom" color="primary">
+        <ion-tab-button tab="notificaciones">
+          <ion-icon name="notifications"></ion-icon>
+          <ion-label>Notificaciones</ion-label>
+          <ion-badge>6</ion-badge>
+        </ion-tab-button>
+
+        <ion-tab-button tab="home">
+          <ion-icon name="home"></ion-icon>
+          <ion-label>Home</ion-label>
+        </ion-tab-button>
+
+        <ion-tab-button tab="usuarios">
+          <ion-icon name="contact"></ion-icon>
+          <ion-label>Usuario</ion-label>
+        </ion-tab-button>
+      </ion-tab-bar>
+    </ion-tabs>
+  </ion-router-outlet>
+</ion-app>
+<link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed" rel="stylesheet">

@@ -1,0 +1,33 @@
+<!--ion-content class="prueba1">
+<div >
+
+      <!--ion-button (click)="closeModal()"> <ion-icon slot="icon-only" name="close"></ion-icon> </ion-button-->
+    <!--ion-title></ion-title>
+    <h5>Auditorio (ENG/SPA)</h5>
+    <h3>CO-S04 <br>
+PanKpro: A focus on main complications management</h3>
+    <p>8:30-9:15 | 9:15-10:00</p>
+</div>
+</ion-content>
+
+<ion-content class="prueba2">
+<div >
+
+
+    <ion-title></ion-title>
+    <h5>Auditorio (ENG/SPA)</h5>
+    <h3>ON-C01 <br>
+Forget-me-nots in retinoblastoma</h3>
+    <p>8:30-9:15 | 9:15-10:00</p>
+
+</div>
+</ion-content-->
+
+<ion-content [forceOverscroll]="false" color="dark" fullscreen="true">
+    <ion-buttons (click)="closeModal()"> <ion-icon slot="icon-only" name="close"></ion-icon> </ion-buttons>
+  <ion-slides [options]="slideOpts">
+    <ion-slide>
+      <div class="swiper-zoom-container"><img [src]="imgSource" height="100vh" /></div>
+    </ion-slide>
+  </ion-slides>
+</ion-content>

@@ -1,0 +1,65 @@
+<ion-header>
+  <ion-toolbar color="secondary" id="Login">
+    <ion-title>Iniciar Sesión</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="background">
+
+  <form #form="ngForm" (ngSubmit)="login(form)">
+    <ion-grid>
+      <ion-row color="primary" justify-content-center>
+        <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
+          <div text-center>
+            <h3>Iniciar Sesión</h3>
+          </div>
+          <div padding>
+            <ion-buttons>
+              <ion-icon name="contact"></ion-icon>
+              <ion-input name="correo" type="email" placeholder="micorreo@email.com" ngModel required></ion-input>
+            </ion-buttons>
+            <br>
+            <ion-buttons>
+              <ion-icon name="lock"></ion-icon>
+              <ion-input name="contrasena" type="password" placeholder="Contraseña" ngModel required></ion-input>
+            </ion-buttons>
+          </div>
+          <div padding>
+            <ion-button csize="large" type="submit" [disabled]="form.invalid" expand="block">Iniciar</ion-button>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-grid>
+    <ion-row>
+        <ion-col>
+         <div text-center>
+       ¿No tienes cuenta?<a routerLink='/registro'>
+         Registate</a> aqui!
+         </div>
+         </ion-col>
+     </ion-row>
+     </ion-grid>
+  </form>
+
+    <!--ion-list class="listLog">
+      <ion-item>
+        <ion-label>Input</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Toggle</ion-label>
+        <ion-toggle slot="end"></ion-toggle>
+      </ion-item>
+      <ion-item>
+        <ion-label>Radio</ion-label>
+        <ion-radio slot="end"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Checkbox</ion-label>
+        <ion-checkbox slot="start"></ion-checkbox>
+      </ion-item>
+    </ion-list-->
+
+</ion-content>
+<link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed" rel="stylesheet">
