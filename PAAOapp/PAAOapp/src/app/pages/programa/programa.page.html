@@ -2,152 +2,199 @@
   <ion-toolbar color="secondary">
     <ion-title id="Prog">PROGRAMA CIENTÍFICO</ion-title>
   </ion-toolbar>
+  <ion-toolbar >
+		<ion-searchbar ></ion-searchbar>
+		<ion-segment color="secondary">
+			<ion-segment-button value="16">Vie/16
+			</ion-segment-button>
+			<ion-segment-button value="17">Sab/17
+			</ion-segment-button>
+			<ion-segment-button value="18">Dom/18
+			</ion-segment-button>
+			<ion-segment-button value="19">Lun/19
+			</ion-segment-button>
+		</ion-segment>
+	</ion-toolbar>
+  
+  
 </ion-header>
 
-<!--Esstructura de programa por dia-->
+
 <ion-content>
-  <ion-grid>
-    <ion-row>
-        <ion-col size="12">
-        <h1>PROGRAMA DE SIMPOSIOS Y CURSOS </h1>
-        <p> Sujeto a cambios sin previo aviso</p>
-        <ion-segment (ionChange)="segmentChanged($event)" [(ngModel)]="page">
-           <ion-segment-button value="0" (click)="selectedTab(0)">
-              25 May
-           </ion-segment-button>
-           <ion-segment-button value="1" (click)="selectedTab(1)">
-              26 May
-           </ion-segment-button>
-           <ion-segment-button value="2" (click)="selectedTab(2)">
-              27 May
-           </ion-segment-button>
-           <ion-segment-button value="3" (click)="selectedTab(3)">
-              28 May
-           </ion-segment-button>
-      </ion-segment>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
-
-  <!--Contenido del programa -->
-<ion-slides #slider (ionSlideWillChange)="moveButton()">
-  <ion-slide>
-    <ion-grid>
-      <ion-row>
-        <ion-col size="1">
-        </ion-col>
-        <ion-col size="10">
-    <ion-list>
-  <ion-item>
-    <ion-label>Auditorio (ENG/SPA)
-     <h3>CO-S04 PanKpro: A focus on main
-      <br>  complications management</h3>
-      <p>8:30-9:15 | 9:15-10:00</p>
-     <h3>ON-C01 Forget-me-nots in retinoblastoma</h3>
-      <p>10:30-11:15</p>
-     <h3>AJO Lecture: ZERO deaths from rare cancer
-      <br> in babies’ eye(s): a global pilot project</h3>
-      <p>11:15-12:00</p>
-     <h3>ES-S02 America in Strabismus. Rapid
-       <br>fire cases. I did it my way</h3>
-      <p>14:00-14:45 | 14:45-15:30</p>
-     <h3>VA-S18 Ophthalmic genetics today</h3>
-      <p>16:00-16:45 | 16:45-17:30</p>
-    </ion-label>
-  </ion-item>
-
-  <ion-item>
-    <ion-label>Bacalar
-     <h3>VA-S08 Tecnología y educación</h3>
-      <p>8:30-9:15 | 9:15-10:00</p>
-     <h3>VA-S09 Competencias para educadores</h3>
-      <p>10:30-11:15 | 11:15-12:00</p>
-     <h3>VA-S10 Simposio latinoamericano de editores
-       <br> de revistas oftalmológicas: Parte I</h3>
-      <p>14:00-14:45 | 14:45-15:30</p>
-     <h3>VA-S11 Simposio latinoamericano de editores
-       <br>de revistas oftalmológicas: Parte II</h3>
-      <p>16:00-16:45 | 16:45-17:30</p>
-    </ion-label>
-  </ion-item>
-
-  <ion-item>
-    <ion-grid>
-      <ion-row>
-        <h2>CONFERENCIAS MAGISTRALES</h2>
-        <ion-col size="4">
-            <br>
-            <img id="logo" src="../assets/images/brenda-gallie.jpg" alt="">
-            <h3>Dr. Brenda Gallie</h3>
-        </ion-col>
-        <ion-col size="8">
-            <h4>Conferencia Ajo</h4>
-            <p>Sábado, 25 de Mayo 11:15 am, Auditorio</p>
-            <h5>Brenda Gallie MD FRCSC CM OOnt</h5>
-            <h3>CERO muertes de raro cáncer en ojos de bebés: un proyecto piloto global </h3>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
-  </ion-item>
-</ion-list>
-</ion-col>
-<ion-col size="1">
-</ion-col>
-</ion-row>
-</ion-grid>
-  </ion-slide>
-
-  <ion-slide>
-    <ion-grid>
-      <ion-row>
-        <h2>CONFERENCIAS MAGISTRALES</h2>
-        <ion-col size="4">
-            <br>
-            <img id="logo" src="../assets/images/eduardo-alfonso.jpg" alt="">
-            <h3>Dr. Eduardo C. Alfonso</h3>
-        </ion-col>
-        <ion-col size="8">
-            <h4>CONFERENCIA PANAMERICANA “MOACYR E. ALVARO”</h4>
-            <p>Domingo 26 de Mayo 11:15 am, Auditorio</p>
-            <h5>Eduardo C. Alfonso MD</h5>
-            <h3>Lo que he aprendido de muchos años sobre el hongo entre nosotros </h3>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
-
-  </ion-slide>
-
-  <ion-slide>
-    <ion-grid>
-      <ion-row>
-        <h2>CONFERENCIAS MAGISTRALES</h2>
-        <ion-col size="4">
-            <br>
-            <img id="logo" src="../assets/images/gaby-palis2.jpg" alt="">
-            <h3>Dr. Gabriela Palis  </h3>
-        </ion-col>
-        <ion-col size="8">
-            <h4>CONFERENCIA GRADLE</h4>
-            <p>Lunes, 27 de Mayo 11:15am, Auditorio</p>
-            <h5>Gabriela Palis MD</h5>
-            <h3>Las residencias oftalmológicas en América Latina
-                (Ophthalmology residency programs in Latin America)</h3>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
-  </ion-slide>
-
-  <ion-slide>
-    <h1></h1>
-  </ion-slide>
-</ion-slides>
-
-
-
-
-
-
-
-
+  <div class="md-paging">
+      <mbsc-bottom-nav [options]="mainSettings">
+          <mbsc-nav-item *ngFor="let item of mainCategories" [icon]="item.icon" [selected]="mainSelected == item.page" (click)="selectMain(item.page)">{{item.name}}</mbsc-nav-item>
+      </mbsc-bottom-nav>
+  
+      <div *ngIf="mainSelected == 'music'">
+          <mbsc-tab-nav [options]="categorySettings" #musicCategories>
+              <mbsc-nav-item *ngFor="let subCat of subCategories.music" [selected]="subCat.id == subSelected" (click)="selectSub(subCat.id, musicContent)">{{subCat.name}}</mbsc-nav-item>
+          </mbsc-tab-nav>
+  
+          <mbsc-scrollview [options]="contentSettings" #musicContent="mobiscroll">
+              <mbsc-scrollview-item id="pop">
+                  <mbsc-listview [options]="listviewSettings">
+                      <mbsc-listview-item *ngFor="let lvItem of data.music.pop" icon="play" icon-align="right">
+                          <img src="//demo.mobiscroll.com{{lvItem.img}}" />
+                          <h4>{{lvItem.title}}</h4>
+                          <p>{{lvItem.artist}}</p>
+                      </mbsc-listview-item>
+                  </mbsc-listview>
+              </mbsc-scrollview-item>
+  
+              <mbsc-scrollview-item id="rock">
+                  <mbsc-listview [options]="listviewSettings">
+                      <mbsc-listview-item *ngFor="let lvItem of data.music.rock" icon="play" icon-align="right">
+                          <img src="//demo.mobiscroll.com{{lvItem.img}}" />
+                          <h4>{{lvItem.title}}</h4>
+                          <p>{{lvItem.artist}}</p>
+                      </mbsc-listview-item>
+                  </mbsc-listview>
+              </mbsc-scrollview-item>
+  
+              <mbsc-scrollview-item id="jazz">
+                  <mbsc-listview [options]="listviewSettings">
+                      <mbsc-listview-item *ngFor="let lvItem of data.music.jazz" icon="play" icon-align="right">
+                          <img src="//demo.mobiscroll.com{{lvItem.img}}" />
+                          <h4>{{lvItem.title}}</h4>
+                          <p>{{lvItem.artist}}</p>
+                      </mbsc-listview-item>
+                  </mbsc-listview>
+              </mbsc-scrollview-item>
+  
+              <mbsc-scrollview-item id="piano">
+                  <mbsc-listview [options]="listviewSettings">
+                      <mbsc-listview-item *ngFor="let lvItem of data.music.piano" icon="play" icon-align="right">
+                          <img src="//demo.mobiscroll.com{{lvItem.img}}" />
+                          <h4>{{lvItem.title}}</h4>
+                          <p>{{lvItem.artist}}</p>
+                      </mbsc-listview-item>
+                  </mbsc-listview>
+              </mbsc-scrollview-item>
+  
+              <mbsc-scrollview-item id="electric">
+                  <mbsc-listview [options]="listviewSettings">
+                      <mbsc-listview-item *ngFor="let lvItem of data.music.electric" icon="play" icon-align="right">
+                          <img src="//demo.mobiscroll.com{{lvItem.img}}" />
+                          <h4>{{lvItem.title}}</h4>
+                          <p>{{lvItem.artist}}</p>
+                      </mbsc-listview-item>
+                  </mbsc-listview>
+              </mbsc-scrollview-item>
+  
+          </mbsc-scrollview>
+      </div>
+  
+      <div *ngIf="mainSelected == 'books'">
+          <mbsc-tab-nav [options]="categorySettings" #bookCategories>
+              <mbsc-nav-item *ngFor="let subCat of subCategories.books" [selected]="subCat.id == subSelected" (click)="selectSub(subCat.id, bookContent)">{{subCat.name}}</mbsc-nav-item>
+          </mbsc-tab-nav>
+          <mbsc-scrollview [options]="contentSettings" #bookContent="mobiscroll">
+              <mbsc-scrollview-item id="fantasyb">
+                  <mbsc-listview [options]="listviewSettings">
+                      <mbsc-listview-item *ngFor="let lvItem of data.books.fantasyb" icon="play" icon-align="right">
+                          <img src="//demo.mobiscroll.com{{lvItem.img}}" />
+                          <h4>{{lvItem.title}}</h4>
+                          <p>{{lvItem.author}}</p>
+                      </mbsc-listview-item>
+                  </mbsc-listview>
+              </mbsc-scrollview-item>
+  
+              <mbsc-scrollview-item id="education">
+                  <mbsc-listview [options]="listviewSettings">
+                      <mbsc-listview-item *ngFor="let lvItem of data.books.education" icon="play" icon-align="right">
+                          <img src="//demo.mobiscroll.com{{lvItem.img}}" />
+                          <h4>{{lvItem.title}}</h4>
+                          <p>{{lvItem.author}}</p>
+                      </mbsc-listview-item>
+                  </mbsc-listview>
+              </mbsc-scrollview-item>
+  
+              <mbsc-scrollview-item id="history">
+                  <mbsc-listview [options]="listviewSettings">
+                      <mbsc-listview-item *ngFor="let lvItem of data.books.history" icon="play" icon-align="right">
+                          <img src="//demo.mobiscroll.com{{lvItem.img}}" />
+                          <h4>{{lvItem.title}}</h4>
+                          <p>{{lvItem.author}}</p>
+                      </mbsc-listview-item>
+                  </mbsc-listview>
+              </mbsc-scrollview-item>
+  
+              <mbsc-scrollview-item id="scifyb">
+                  <mbsc-listview [options]="listviewSettings">
+                      <mbsc-listview-item *ngFor="let lvItem of data.books.scifyb" icon="play" icon-align="right">
+                          <img src="//demo.mobiscroll.com{{lvItem.img}}" />
+                          <h4>{{lvItem.title}}</h4>
+                          <p>{{lvItem.author}}</p>
+                      </mbsc-listview-item>
+                  </mbsc-listview>
+              </mbsc-scrollview-item>
+  
+              <mbsc-scrollview-item id="romanceb">
+                  <mbsc-listview [options]="listviewSettings">
+                      <mbsc-listview-item *ngFor="let lvItem of data.books.romanceb" icon="play" icon-align="right">
+                          <img src="//demo.mobiscroll.com{{lvItem.img}}" />
+                          <h4>{{lvItem.title}}</h4>
+                          <p>{{lvItem.author}}</p>
+                      </mbsc-listview-item>
+                  </mbsc-listview>
+              </mbsc-scrollview-item>
+          </mbsc-scrollview>
+      </div>
+  
+      <div *ngIf="mainSelected == 'moovies'">
+          <mbsc-tab-nav [options]="categorySettings" #movieCategories>
+              <mbsc-nav-item *ngFor="let subCat of subCategories.moovies" [selected]="subCat.id == subSelected" (click)="selectSub(subCat.id, movieContent)">{{subCat.name}}</mbsc-nav-item>
+          </mbsc-tab-nav>
+  
+          <mbsc-scrollview [options]="contentSettings" #movieContent="mobiscroll">
+              <mbsc-scrollview-item id="fantasym">
+                  <mbsc-listview [options]="listviewSettings">
+                      <mbsc-listview-item *ngFor="let lvItem of data.moovies.fantasym" icon="play" icon-align="right">
+                          <img src="//demo.mobiscroll.com{{lvItem.img}}" />
+                          <h4>{{lvItem.title}}</h4>
+                          <p>{{lvItem.producer}}</p>
+                      </mbsc-listview-item>
+                  </mbsc-listview>
+              </mbsc-scrollview-item>
+              <mbsc-scrollview-item id="horror">
+                  <mbsc-listview [options]="listviewSettings">
+                      <mbsc-listview-item *ngFor="let lvItem of data.moovies.horror" icon="play" icon-align="right">
+                          <img src="//demo.mobiscroll.com{{lvItem.img}}" />
+                          <h4>{{lvItem.title}}</h4>
+                          <p>{{lvItem.producer}}</p>
+                      </mbsc-listview-item>
+                  </mbsc-listview>
+              </mbsc-scrollview-item>
+              <mbsc-scrollview-item id="animation">
+                  <mbsc-listview [options]="listviewSettings">
+                      <mbsc-listview-item *ngFor="let lvItem of data.moovies.animation" icon="play" icon-align="right">
+                          <img src="//demo.mobiscroll.com{{lvItem.img}}" />
+                          <h4>{{lvItem.title}}</h4>
+                          <p>{{lvItem.producer}}</p>
+                      </mbsc-listview-item>
+                  </mbsc-listview>
+              </mbsc-scrollview-item>
+              <mbsc-scrollview-item id="scifym">
+                  <mbsc-listview [options]="listviewSettings">
+                      <mbsc-listview-item *ngFor="let lvItem of data.moovies.scifym" icon="play" icon-align="right">
+                          <img src="//demo.mobiscroll.com{{lvItem.img}}" />
+                          <h4>{{lvItem.title}}</h4>
+                          <p>{{lvItem.producer}}</p>
+                      </mbsc-listview-item>
+                  </mbsc-listview>
+              </mbsc-scrollview-item>
+              <mbsc-scrollview-item id="romance">
+                  <mbsc-listview [options]="listviewSettings">
+                      <mbsc-listview-item *ngFor="let lvItem of data.moovies.romancem" icon="play" icon-align="right">
+                          <img src="//demo.mobiscroll.com{{lvItem.img}}" />
+                          <h4>{{lvItem.title}}</h4>
+                          <p>{{lvItem.producer}}</p>
+                      </mbsc-listview-item>
+                  </mbsc-listview>
+              </mbsc-scrollview-item>
+          </mbsc-scrollview>
+      </div>
+  
+  </div>
 </ion-content>
-<link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed" rel="stylesheet">

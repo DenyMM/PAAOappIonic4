@@ -4,11 +4,11 @@ ion-content {
     --background: #000000 url('../../assets/splash/Splash1v2.jpg')  0 0/100% 100% no-repeat;
 
 }
-
+ion-input {
+  text-size-adjust: 14px;
+}
 #Signin {
-  font-family: 'Roboto Condensed', Bold;
   font-size-adjust: auto;
-  font-size: 90px;
   text-align: left;
 }
 
@@ -16,13 +16,7 @@ ion-content {
   color:#ffffff;
 
   align-content: center;
-  font-family: 'Roboto Condensed', sans-serif;
-  font-size-adjust: auto;
-  font-size: small;
-  font-stretch: semi-condensed;
-  font-size-adjust: auto;
   text-align: left;
-  font-variant-position: super;
 }
 
 ion-buttons{
@@ -30,7 +24,6 @@ ion-buttons{
   background-blend-mode: luminosity;
   opacity: 0.9;
   color: #ffffff;
-  text-shadow: 1px 1px 2px gray, 0 0 1em white, 0 0 0.2em gray;
 
 }
 
@@ -42,7 +35,6 @@ ion-buttons{
  font-size-adjust: auto;
  font-size: normal;
  font-stretch: semi-condensed;
- font-size-adjust: auto;
  text-align: center;
  font-variant-position: super;
  text-shadow: #ffffff 1px 0 10px;
@@ -53,10 +45,6 @@ ion-button{
 
   align-content: center;
   font-family: 'Roboto Condensed', sans-serif;
-  font-size-adjust: auto;
-  font-size: normal;
-  font-stretch: semi-condensed;
-  font-size-adjust: auto;
   text-align: center;
   font-variant-position: super;
   text-shadow: #ffffff 1px 0 10px;

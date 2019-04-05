@@ -11,7 +11,9 @@ export class ImageViewerComponent implements OnInit {
 
 
   slideOpts = {
-    centeredSlides: 'true'
+    zoom: true,
+    slidesPerView: 1,
+    centeredSlides: true
   };
 
   constructor(private modalController: ModalController) {}

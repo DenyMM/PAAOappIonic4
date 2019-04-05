@@ -1,50 +1,40 @@
-
-
-#Prog{
-  font-family: 'Roboto Condensed', Bold;
-  font-size-adjust:auto;
-  font-size: 20px;
-  text-align: left;
+body,
+mbsc-page>.mbsc-page {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: visible;
 }
 
-h1 {
-  font-family: 'Roboto Condensed', Bold;
-  font-size-adjust: auto;
-  font-size: 20px;
-  text-align: center;
+.demo-paging,
+.md-paging,
+.md-paging>div,
+.md-paging .md-page {
+    height: 100%;
+    padding: 0;
+    overflow: hidden;
 }
 
-h2 {
-  font-family: 'Roboto Condensed', Bold;
-  font-size-adjust: auto;
-  font-size: 16px;
-  text-align: center;
+.md-paging .md-cont {
+    display: none;
 }
 
-h3, p{
- font-family: 'Roboto Condensed', Bold;
- font-size-adjust: auto;
- text-align: left;
+.md-paging .md-selected {
+    display: block;
 }
 
-h4, ion-item-option {
-  font-family: 'Roboto Condensed', Bold;
-  font-size-adjust: auto;
-  font-size: 15px;
-  text-align: center;
+.md-paging .md-list-cont,
+.md-paging .mbsc-lv-cont {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 auto;
+    -ms-flex: 1 auto;
+    flex: 1 auto;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
 }
 
-h5 {
-  font-family: 'Roboto Condensed', Bold;
-  font-size-adjust: auto;
-  font-size: 13px;
-  text-align: center;
-}
-
-h3{
- font-size: 12px;
-}
-
-p{
- font-size: 11px;
+.md-paging .mbsc-lv-img {
+    pointer-events: none;
+    border-radius: 2.8em;
+    height: 2.8em;
 }
