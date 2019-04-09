@@ -13,6 +13,11 @@ const routes: Routes = [
   { path: 'registro', loadChildren: './registro/registro.module#RegistroPageModule' },
   { path: 'notificaciones', loadChildren: './notificaciones/notificaciones.module#NotificacionesPageModule' },
   { path: 'carteles', loadChildren: './pages/carteles/carteles.module#CartelesPageModule' },
+  { path: 'ponentes', loadChildren: './pages/ponentes/ponentes.module#PonentesPageModule' },
+  { path: 'patrocinador', loadChildren: './pages/patrocinador/patrocinador.module#PatrocinadorPageModule' },
+  { path: 'circuito', loadChildren: './pages/circuito/circuito.module#CircuitoPageModule' },
+  { path: 'congresistas', loadChildren: './pages/congresistas/congresistas.module#CongresistasPageModule' },
+  { path: 'informacion', loadChildren: './pages/ponentes/informacion/informacion.module#InformacionPageModule' },
 ];
 
 @NgModule({

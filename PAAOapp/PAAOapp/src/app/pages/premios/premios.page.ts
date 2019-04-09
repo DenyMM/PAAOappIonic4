@@ -28,18 +28,6 @@ export class PremiosPage implements OnInit {
    await popover.present();
  }
 
- async mostrarPop1(){
-
-   const popover = await this.popoverCtrl.create({
-     component: ImageViewerComponent,
-     componentProps:{
-       prueba1: false,
-       prueba2: true
-     }
-   });
-
-   await popover.present();
- }
  ngOnInit() {
  }
 }
