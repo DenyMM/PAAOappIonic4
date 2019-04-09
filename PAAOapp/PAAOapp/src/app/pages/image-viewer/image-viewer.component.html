@@ -1,10 +1,19 @@
 
 
 <ion-content [forceOverscroll]="false" color="dark" fullscreen="true">
-    <ion-buttons (click)="closeModal()"> <ion-icon slot="icon-only" name="close"></ion-icon> </ion-buttons>
   <ion-slides [options]="slideOpts">
     <ion-slide>
       <div class="swiper-zoom-container"><img [src]="imgSource" height="100vh" /></div>
     </ion-slide>
   </ion-slides>
 </ion-content>
+    <ion-button color="invisible"  slot="icon-only" (click)="closeModal()"> <ion-icon slot="icon-only" name="close" ></ion-icon> </ion-button>
+
+    <ion-content [forceOverscroll]="false" color="dark" fullscreen="true">
+      <ion-slides [options]="slideOpts">
+        <ion-slide>
+          <div class="swiper-zoom-container"><img [src]="imgSource1" height="100vh" /></div>
+        </ion-slide>
+      </ion-slides>
+    </ion-content>
+        <ion-button color="invisible"  slot="icon-only" (click)="closeModal()"> <ion-icon slot="icon-only" name="close" ></ion-icon> </ion-button>

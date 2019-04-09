@@ -8,7 +8,7 @@ import { ModalController } from '@ionic/angular';
 })
 export class ImageViewerComponent implements OnInit {
   @Input() imgSource = '';
-
+  @Input() imgSource1 = '';
 
   slideOpts = {
     centeredSlides: 'true'

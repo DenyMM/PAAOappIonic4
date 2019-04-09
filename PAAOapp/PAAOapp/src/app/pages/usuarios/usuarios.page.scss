@@ -1,7 +1,7 @@
 
 
 ion-content {
-    --background: #000000 url('../../../assets/splash/Splash1v2.jpg')  0 0/100% 100% no-repeat;
+    --background: #000000 url('../../../assets/images/splash_smo.png')  0 0/100% 100% no-repeat;
 
 }
 
@@ -18,11 +18,9 @@ div, h3{
  align-content: center;
  font-family: 'Roboto Condensed', sans-serif;
  font-size-adjust: auto;
- font-size: small;
- font-stretch: semi-condensed;
+ font-size: normal;
  font-size-adjust: auto;
  text-align: left;
- font-variant-position: super;
 }
 
 ion-buttons{
@@ -36,7 +34,7 @@ ion-buttons{
 ion-button{
   color:#ffffff;
 
-  
+
   align-content: center;
   font-family: 'Roboto Condensed', sans-serif;
   font-size-adjust: auto;

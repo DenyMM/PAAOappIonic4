@@ -1,4 +1,9 @@
-
+#videos{
+  font-family: 'Roboto Condensed', Bold;
+  font-size-adjust: auto;
+  font-size: 90px;
+  text-align: left;
+}
 
 h1 {
   font-family: 'Roboto Condensed', Bold;
@@ -11,7 +16,7 @@ h2 {
   font-family: 'Roboto Condensed', Bold;
   font-size-adjust: auto;
   font-size: 18px;
-  text-align: center;
+  text-align: left;
 }
 
 h3{
@@ -32,7 +37,7 @@ h5 {
   font-family: 'Roboto Condensed', Bold;
   font-size-adjust: auto;
   font-size: 12px;
-  text-align: center;
+  text-align: left;
 }
 
 p{
@@ -45,6 +50,7 @@ p{
 
 ion-label{
   text-align: left;
+  font-size-adjust: auto;
 }
 
 ion-searchbar{

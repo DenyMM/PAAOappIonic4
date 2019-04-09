@@ -11,6 +11,7 @@ export class PlanosPage implements OnInit {
 
   // imagen a mostrar
   imgSource = '../assets/images/comercial.jpg';
+  imgSource1 = '../assets/images/salones.jpg';
 
    slideOpts = {
      centeredSlides: 'true'
@@ -25,6 +26,7 @@ export class PlanosPage implements OnInit {
            component: ImageViewerComponent,
            componentProps: {
              imgSource: src,
+             imgSource1:false
            },
         cssClass: 'modal-fullscreen',
         keyboardClose: true,
@@ -33,6 +35,22 @@ export class PlanosPage implements OnInit {
 
       return await modal.present();
     }
+
+    //funcion paraa la imagen en el modal//
+      async viewImage1(src: string) {
+          const modal = await this.modalController.create({
+            component: ImageViewerComponent,
+            componentProps: {
+              imgSource1: src,
+              imgSource:false
+            },
+         cssClass: 'modal-fullscreen',
+         keyboardClose: true,
+         showBackdrop: true
+       });
+
+       return await modal.present();
+     }
 
 
    ngOnInit() {}
