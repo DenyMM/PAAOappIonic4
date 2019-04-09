@@ -11,10 +11,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { ImageViewerComponent } from './pages/image-viewer/image-viewer.component';
 import { PopoverLauncherComponent } from './pages/popover-launcher/popover-launcher.component';
 import { NotificacionComponent } from './notificaciones/notificacion/notificacion.component';
+import { VideoViewerComponent } from './pages/video-viewer/video-viewer.component';
 
 @NgModule({
-  declarations: [AppComponent, ImageViewerComponent, PopoverLauncherComponent, NotificacionComponent],
-  entryComponents: [ImageViewerComponent, PopoverLauncherComponent, NotificacionComponent],
+  declarations: [AppComponent, ImageViewerComponent, PopoverLauncherComponent, NotificacionComponent, VideoViewerComponent],
+  entryComponents: [ImageViewerComponent, PopoverLauncherComponent, NotificacionComponent, VideoViewerComponent],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule,],
   providers: [
     StatusBar,
