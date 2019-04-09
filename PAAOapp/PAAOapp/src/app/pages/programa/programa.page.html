@@ -1,154 +1,86 @@
 <ion-header>
   <ion-toolbar color="secondary">
-    <ion-title id="Prog">PROGRAMA CIENTÍFICO</ion-title>
+    <!--Buscador -->
+    <ion-searchbar debounce="500"></ion-searchbar>
   </ion-toolbar>
   <!--Buscador -->
   <ion-searchbar debounce="500"></ion-searchbar>
+  <ion-segment (ionChange)="segmentChanged($event)" [(ngModel)]="page" color="secondary">
+    <ion-segment-button value="0" (click)="selectedTab(0)">
+       25 May
+    </ion-segment-button>
+    <ion-segment-button value="1" (click)="selectedTab(1)">
+       26 May
+    </ion-segment-button>
+    <ion-segment-button value="2" (click)="selectedTab(2)">
+       27 May
+    </ion-segment-button>
+    <ion-segment-button value="3" (click)="selectedTab(3)">
+       28 May
+    </ion-segment-button>
+</ion-segment>
 </ion-header>
 
 <!--Esstructura de programa por dia-->
 <ion-content>
-  <ion-grid>
-    <ion-row>
-        <ion-col size="12">
-        <h1>PROGRAMA DE SIMPOSIOS Y CURSOS </h1>
-        <ion-segment (ionChange)="segmentChanged($event)" [(ngModel)]="page">
-           <ion-segment-button value="0" (click)="selectedTab(0)">
-              25 May
-           </ion-segment-button>
-           <ion-segment-button value="1" (click)="selectedTab(1)">
-              26 May
-           </ion-segment-button>
-           <ion-segment-button value="2" (click)="selectedTab(2)">
-              27 May
-           </ion-segment-button>
-           <ion-segment-button value="3" (click)="selectedTab(3)">
-              28 May
-           </ion-segment-button>
-      </ion-segment>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
-
-  <!--Contenido del programa -->
-<ion-slides #slider (ionSlideWillChange)="moveButton()">
-  <ion-slide>
-    <ion-grid>
-      <ion-row>
-        <ion-col size="1">
-        </ion-col>
-        <ion-col size="10">
-    <ion-list>
+<!-- List of Text Items -->
+<ion-list>
   <ion-item>
-    <ion-label>Auditorio (ENG/SPA)
-     <h3>CO-S04 PanKpro: A focus on main
-      <br>  complications management</h3>
-      <p>8:30-9:15 | 9:15-10:00</p>
-     <h3>ON-C01 Forget-me-nots in retinoblastoma</h3>
-      <p>10:30-11:15</p>
-     <h3>AJO Lecture: ZERO deaths from rare cancer
-      <br> in babies’ eye(s): a global pilot project</h3>
-      <p>11:15-12:00</p>
-     <h3>ES-S02 America in Strabismus. Rapid
-       <br>fire cases. I did it my way</h3>
-      <p>14:00-14:45 | 14:45-15:30</p>
-     <h3>VA-S18 Ophthalmic genetics today</h3>
-      <p>16:00-16:45 | 16:45-17:30</p>
-    </ion-label>
+    <ion-label>Pokémon Yellow</ion-label>
   </ion-item>
-
   <ion-item>
-    <ion-label>Bacalar
-     <h3>VA-S08 Tecnología y educación</h3>
-      <p>8:30-9:15 | 9:15-10:00</p>
-     <h3>VA-S09 Competencias para educadores</h3>
-      <p>10:30-11:15 | 11:15-12:00</p>
-     <h3>VA-S10 Simposio latinoamericano de editores
-       <br> de revistas oftalmológicas: Parte I</h3>
-      <p>14:00-14:45 | 14:45-15:30</p>
-     <h3>VA-S11 Simposio latinoamericano de editores
-       <br>de revistas oftalmológicas: Parte II</h3>
-      <p>16:00-16:45 | 16:45-17:30</p>
-    </ion-label>
+    <ion-label>Mega Man X</ion-label>
   </ion-item>
-
   <ion-item>
-    <ion-grid>
-      <ion-row>
-        <h2>CONFERENCIAS MAGISTRALES</h2>
-        <ion-col size="4">
-            <br>
-            <img id="logo" src="../assets/images/brenda-gallie.jpg" alt="">
-            <h3>Dr. Brenda Gallie</h3>
-        </ion-col>
-        <ion-col size="8">
-            <h4>Conferencia Ajo</h4>
-            <p>Sábado, 25 de Mayo 11:15 am, Auditorio</p>
-            <h5>Brenda Gallie MD FRCSC CM OOnt</h5>
-            <h3>CERO muertes de raro cáncer en ojos de bebés: un proyecto piloto global </h3>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
+    <ion-label>The Legend of Zelda</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>Pac-Man</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>Super Mario World</ion-label>
   </ion-item>
 </ion-list>
-</ion-col>
-<ion-col size="1">
-</ion-col>
-</ion-row>
-</ion-grid>
-  </ion-slide>
 
-  <ion-slide>
-    <ion-grid>
-      <ion-row>
-        <h2>CONFERENCIAS MAGISTRALES</h2>
-        <ion-col size="4">
-            <br>
-            <img id="logo" src="../assets/images/eduardo-alfonso.jpg" alt="">
-            <h3>Dr. Eduardo C. Alfonso</h3>
-        </ion-col>
-        <ion-col size="8">
-            <h4>CONFERENCIA PANAMERICANA “MOACYR E. ALVARO”</h4>
-            <p>Domingo 26 de Mayo 11:15 am, Auditorio</p>
-            <h5>Eduardo C. Alfonso MD</h5>
-            <h3>Lo que he aprendido de muchos años sobre el hongo entre nosotros </h3>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
+<!-- List of Input Items -->
+<ion-list>
+  <ion-item>
+    <ion-label>Input</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Toggle</ion-label>
+    <ion-toggle slot="end"></ion-toggle>
+  </ion-item>
+  <ion-item>
+    <ion-label>Radio</ion-label>
+    <ion-radio slot="end"></ion-radio>
+  </ion-item>
+  <ion-item>
+    <ion-label>Checkbox</ion-label>
+    <ion-checkbox slot="start"></ion-checkbox>
+  </ion-item>
+</ion-list>
 
-  </ion-slide>
+<!-- List of Sliding Items -->
+<ion-list>
+  <ion-item-sliding>
+    <ion-item>
+      <ion-label>Item</ion-label>
+    </ion-item>
+    <ion-item-options side="end">
+      <ion-item-option (click)="unread(item)">Unread</ion-item-option>
+    </ion-item-options>
+  </ion-item-sliding>
 
-  <ion-slide>
-    <ion-grid>
-      <ion-row>
-        <h2>CONFERENCIAS MAGISTRALES</h2>
-        <ion-col size="4">
-            <br>
-            <img id="logo" src="../assets/images/gaby-palis2.jpg" alt="">
-            <h3>Dr. Gabriela Palis  </h3>
-        </ion-col>
-        <ion-col size="8">
-            <h4>CONFERENCIA GRADLE</h4>
-            <p>Lunes, 27 de Mayo 11:15am, Auditorio</p>
-            <h5>Gabriela Palis MD</h5>
-            <h3>Las residencias oftalmológicas en América Latina
-                (Ophthalmology residency programs in Latin America)</h3>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
-  </ion-slide>
-
-  <ion-slide>
-    <h1></h1>
-  </ion-slide>
-</ion-slides>
-
-
-
-
-
-
-
-
+  <ion-item-sliding>
+    <ion-item>
+      <ion-label>Item</ion-label>
+    </ion-item>
+    <ion-item-options side="end">
+      <ion-item-option (click)="unread(item)">Unread</ion-item-option>
+    </ion-item-options>
+  </ion-item-sliding>
+</ion-list>
 </ion-content>
 <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed" rel="stylesheet">

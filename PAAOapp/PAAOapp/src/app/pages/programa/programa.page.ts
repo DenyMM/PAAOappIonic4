@@ -6,17 +6,7 @@ import { Component, OnInit, ViewChild } from '@angular/core';
   styleUrls: ['./programa.page.scss'],
 })
 export class ProgramaPage implements OnInit {
-  @ViewChild('slider') slider: Slides;
- page = "0";
 
-selectedTab(index) {
-    this.slider.slideTo(index);
-}
-
-async moveButton() {
-    let index = await this.slider.getActiveIndex();
-    this.page = index.toString();
-}
 
   constructor() { }
 
