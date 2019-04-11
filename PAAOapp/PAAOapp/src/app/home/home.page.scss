@@ -19,43 +19,66 @@ ion-content {
  }
 
 
-#butPrg, #butBusc, #butProAt, #butCart, #butVide, #butPone, #butLug, #butExpo, #butCirc  {
+#butPrg, #butBusc, #butProAt, #butCart, #butPone, #butLug, #butExpo, #butCirc  {
   color:#ffffff;
 
   align-content: center;
   font-family: 'Roboto Condensed', sans-serif;
   font-size-adjust: auto;
-  font-size: small;
-  font-stretch: semi-condensed;
-  font-size-adjust: auto;
-  text-align: left;
-  font-variant-position: super;
+  font-size: normal;
+  text-align:justify;
 }
 
-  #butOrg, #butBienv, #butPatr, #butCongr {
+#butVide{
+  color:#ffffff;
+
+  align-content: center;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size-adjust: auto;
+  font-size: normal;
+  text-align:justify;
+}
+
+  #butOrg, #butBienv {
    color:#ffffff;
 
    align-content: center;
    font-family: 'Roboto Condensed', sans-serif;
    font-size-adjust: auto;
-   font-size: 68%;
-   font-stretch: semi-condensed;
-   font-size-adjust: auto;
-   text-align: left;
-   font-variant-position: super;
+   font-size: normal;
+   text-align: justify;
  }
-#h1, #h2, #h3, #h4, #h5, #h7, #h8, #h9, #h10, #h11, #h12, #h13, #h14, #h15{
+
+ #butPatr, #butCongr{
+   color:#ffffff;
+
+   align-content: center;
+   font-family: 'Roboto Condensed', sans-serif;
+   font-size-adjust: auto;
+   font-size: 85%;
+   text-align: justify;
+
+ }
+
+#h1, #h2, #h3, #h4, #h7, #h8, #h9, #h10, #h11, #h12, #h13, #h14, #h15{
   max-width: 60%;
-  align-items: left;
+  align-items: center;
   align-content: center;
   filter:opacity(60%);
   filter:invert(1);
 }
 
+#h5{
+  max-width: 60%;
+  align-content:space-between;
+  filter:opacity(60%);
+  filter:invert(1);
+}
+
  #h6{
-   max-width: 100%;
-   align-items: left;
-   align-content: center;
+   max-width: 70%;
+   align-items: justify;
+   align-content: justify;
  }
 
 
