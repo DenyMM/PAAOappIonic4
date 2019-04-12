@@ -60,7 +60,7 @@ ion-content {
 
  }
 
-#h1, #h2, #h3, #h4, #h7, #h8, #h9, #h10, #h11, #h12, #h13, #h14, #h15{
+#h1, #h2, #h3, #h4, #h7, #h8, #h10, #h11, #h12, #h13, #h14, #h15{
   max-width: 60%;
   align-items: center;
   align-content: center;
@@ -79,6 +79,14 @@ ion-content {
    max-width: 70%;
    align-items: justify;
    align-content: justify;
+ }
+
+ #h9{
+   max-width: 50%;
+   align-items: center;
+   align-content: center;
+   filter:opacity(60%);
+   filter:invert(1);
  }
 
 
