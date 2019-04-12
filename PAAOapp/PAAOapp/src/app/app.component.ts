@@ -16,10 +16,10 @@ export class AppComponent {
     private statusBar: StatusBar
   ) {
 
-this.splashScreen.show();
 
-this.splashScreen.hide();
+
     this.initializeApp();
+    this.splashScreen.show();
   }
 
   initializeApp() {

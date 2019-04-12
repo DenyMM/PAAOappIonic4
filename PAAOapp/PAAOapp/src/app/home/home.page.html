@@ -148,9 +148,8 @@
     </ion-col>
     <ion-col size="3">
      <div>
-       <ion-buttons>
-         <a href="http://gruporoyale.net/shop/home.php?lang=1&event=89&zona=1">
-         <img id="h9" src="../assets/icon/travel.png"></a>
+       <ion-buttons (click)="lugarInteres()">
+         <img id="h9" src="../assets/icon/travel.png">
          </ion-buttons>
        <p id="butLug">
          Lugar de
@@ -230,14 +229,14 @@
   </div>
 </ion-col>
 <ion-col size=3>
-<!--div>
-  <ion-buttons routerLink="/">
-    <img id="h14" src="../assets/icon/live.png" alt="">
+<div>
+  <ion-buttons routerLink="/agenda">
+    <img id="h14" src="../assets/icon/calendar.png" alt="">
     </ion-buttons>
   <p id="butLive">
-  En vivo
+    Mi agenda
   </p>
-</div-->
+</div>
 </ion-col>
 <ion-col size="1">
   <div>
@@ -246,10 +245,10 @@
 <ion-col size="3">
   <!--div>
     <ion-buttons routerLink="/">
-      <img id="h15" src="../assets/icon/.png" alt="">
+      <img id="h15" src="../assets/icon/live.png" alt="">
       </ion-buttons>
     <p id="butSalon">
-
+      En vivo
     </p>
   </div-->
 </ion-col>

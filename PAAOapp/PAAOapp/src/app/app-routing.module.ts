@@ -19,6 +19,7 @@ const routes: Routes = [
   { path: 'congresistas', loadChildren: './pages/congresistas/congresistas.module#CongresistasPageModule' },
   { path: 'informacion', loadChildren: './pages/ponentes/informacion/informacion.module#InformacionPageModule' },
   { path: 'videos', loadChildren: './pages/videos/videos.module#VideosPageModule' },
+  { path: 'agenda', loadChildren: './pages/agenda/agenda.module#AgendaPageModule' },
 ];
 
 @NgModule({

@@ -1,4 +1,5 @@
 import { Component, ViewChild } from '@angular/core';
+import { InAppBrowser } from '@ionic-native/in-app-browser/ngx';
 
 @Component({
   selector: 'app-home',
@@ -91,4 +92,9 @@ checkisEnd(object, slideView) {
   });
 }
 */
+constructor(private iab: InAppBrowser) { }
+
+lugarInteres(){
+  const browser = this.iab.create('http://gruporoyale.net/shop/home.php?lang=1&event=89&zona=1', '_system');
+}
 }
